@@ -1,0 +1,15 @@
+{
+    "sourceMaps": true,
+    "projFile": "./src/webpackSample/webpackSample.fsproj",
+    "outDir": "temp",
+    "scripts": {
+        "postbuild": "webpack && live-server"
+    },
+    "targets": {
+        "watch": {
+            "scripts": {
+                "postbuild": "webpack --watch"
+            }
+        }
+    }
+}
